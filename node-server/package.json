@@ -1,0 +1,17 @@
+{
+  "name": "chativa-realtime",
+  "version": "1.0.0",
+  "description": "سرور WebSocket بلادرنگ Chativa برای اجرا روی cPanel Node.js App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
