@@ -1,0 +1,54 @@
+# === اطلاعات حساس / اختصاصی هر نصب ===
+# فایل واقعی اتصال دیتابیس؛ توسط install.php به‌صورت خودکار ساخته می‌شود.
+# فقط db_config.sample.php (نمونه) باید در گیت باشد.
+config/db_config.php
+
+# متغیرهای محیطی سرور Node.js (شامل WS_SECRET)
+node-server/.env
+
+# === داده‌های زمان اجرا (runtime) ===
+# محتوای واقعی آپلودها در گیت نگه‌داشته نمی‌شود، فقط ساختار پوشه‌ها (.gitkeep) حفظ می‌شود.
+uploads/*
+!uploads/.htaccess
+!uploads/images/
+uploads/images/*
+!uploads/images/.gitkeep
+!uploads/videos/
+uploads/videos/*
+!uploads/videos/.gitkeep
+!uploads/voice/
+uploads/voice/*
+!uploads/voice/.gitkeep
+!uploads/documents/
+uploads/documents/*
+!uploads/documents/.gitkeep
+!uploads/avatar/
+uploads/avatar/*
+!uploads/avatar/.gitkeep
+!uploads/branding/
+uploads/branding/*
+!uploads/branding/.gitkeep
+
+# فایل‌های session کاربران
+sessions/*
+!sessions/.htaccess
+!sessions/.gitkeep
+
+# لاگ‌های خطا
+logs/*
+!logs/.htaccess
+!logs/.gitkeep
+
+# === Node.js (node-server/) ===
+node-server/node_modules/
+node-server/npm-debug.log*
+node-server/*.log
+
+# === سیستم‌عامل و ویرایشگر ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
