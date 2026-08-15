@@ -1,0 +1,22 @@
+{
+  "name": "beach-memory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Emotional cinematic video built from a single beach photograph with Remotion",
+  "scripts": {
+    "audio": "node scripts/gen-audio.mjs",
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts BeachMemory out/beach-memory.mp4 --codec h264 --crf 16"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.512",
+    "@remotion/motion-blur": "4.0.512",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.512"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.6.3"
+  }
+}

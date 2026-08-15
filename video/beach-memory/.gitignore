@@ -1,0 +1,12 @@
+node_modules/
+
+# Render output. The delivered master is committed explicitly; everything else
+# here is scratch from the render/inspect loop.
+out/*
+!out/beach-memory.mp4
+
+# Derived from public/img/beach.jpg by scripts/upscale.py.
+public/img/beach@2x.jpg
+
+# Synthesized by scripts/gen-audio.mjs.
+public/audio/*.wav
